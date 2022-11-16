@@ -6,7 +6,7 @@ Certbot adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
-*
+* `acme.challenges.HTTP01Response.simple_verify` now accepts a timeout argument which defaults to 30 that causes the verification request to timeout after that many seconds.
 
 ### Changed
 
@@ -34,7 +34,7 @@ Certbot adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
-*
+* Requests to subscribe to the EFF mailing list now time out after 60 seconds.
 
 More details about these changes can be found on our GitHub repo.
 

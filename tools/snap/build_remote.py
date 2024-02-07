@@ -226,6 +226,8 @@ def main():
     archs = set(args.archs)
     targets = set(args.targets)
 
+    os.environ["SNAPCRAFT_REMOTE_BUILD_STRATEGY"] = "force-fallback"
+
     if 'ALL' in targets:
         targets.remove('ALL')
         targets.update(['certbot', 'DNS_PLUGINS'])
